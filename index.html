@@ -1,186 +1,658 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
     <meta charset="utf-8">
-    <title>Jon Chretien | Front End Engineer</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn:900" rel="stylesheet">
-  </head>
-  <body class="line">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jesse Dilgee CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@2.2.1/bulma-carousel/dist/css/bulma-carousel.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@2.2.1/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <style>
+      @font-face {
+      font-family: 'Neon';
+      src: url(fonts/marqueemoon.ttf);
+      }
 
-    <!-- main container with set width -->
-    <!-- header with introduction -->
+      @font-face {
+          font-family: 'Roboto';
+          src: url(fonts/Roboto-Condensed.ttf);
+      }
 
-  <div class="main-container">
-    <header>
-      <img src="img/logo.jpg" alt="face" class="center">
-      <h1>👋 Hello</h1>
-      <p class="main">My name is Jon Chretien. I’m a <a href="https://en.wikipedia.org/wiki/New_York_City" target="_blank">NYC</a> based front end engineer currently</p> <p class="main">working on web apps for artists at <a href="https://www.spotify.com/" target="_blank">Spotify</a>. I previously built editorial &</p> <p class="main">marketing projects at <a href="https://www.nytimes.com/" target="_blank">The New York Times</a>.</p>
-    </header>
-    <div class="border-1"></div>
+      @font-face {
+          font-family: 'thin';
+          src: url(fonts/Roboto-Thin.ttf);
+      }
 
-     <!-- sub-main container with all containers inside -->
+      html {
+          scroll-behavior: smooth;
+      }
 
-    <div class="sub-main-container">
-    <section>
-      <h2>Selected Works</h2>
-      <div class="grid-container-1 border-2">
-        <div class="grid-item">
-          <a href="https://artists.spotify.com/blog/fan-insights-is-now-spotify-for-artists" target="_blank">
-          <img src="img/selectedwork1.jpg">
-          <a class="smooth">Spotify for Artists</a>
-          <p>Fan insights for artists & managers to discover more about their audience.</p>
-          <h6>FRONT END CODE FOR SPOTIFY</h6>
-        </div>
+      body {
+          font-family: 'Roboto';
+      }
 
-        <div class="grid-item">
-          <a href="http://www.nytimes.com/indexes/2010/11/02/index.html"target="_blank">
-          <img src="img/selectedwork2.jpg">
-          <a class="smooth">Midterm Election Banners</a>
-          <p>Home page banners that highlighted the house & senate results, as well as leaders in the top races.</p>
-          <h6>FRONT END & RUBY CODE FOR NYTIMES</h6>
-        </div>
+      p {
+        font-size: 20px;
+      }
 
-        <div class="grid-item">
-          <a href="http://opinionator.blogs.nytimes.com/" target="_blank">
-          <img src="img/selectedwork3.gif">
-          <a class="smooth">Opinionator Blog</a>
-          <p>This NYTimes’ blog highlighted opinion columnists & their commentary on politics, law, science, finance.</p>
-          <h6>FRONT END CODE FOR NYTIMES</h6>
-        </div>
+      .hero {
+          background-image: url(img/origami-hero.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          overflow: hidden;
+      }
 
-        <div class="grid-item">
-          <a href="https://projects.jonchretien.com/emp/" target="_blank">
-          <img src="img/selectedwork4.jpg">
-          <a class="smooth">Eleven Madison Park (v1)</a>
-          <p>A contemporary American fine dining restaurant located in the heart of New York City.</p>
-          <h6>FRONT END CODE FOR EMP</h6>
-        </div>
+      .navbar-brand {
+          font-size: 34px;
+          font-weight: bold;
+      }
 
-        <div class="grid-item">
-          <a href="https://projects.jonchretien.com/custard/" target="_blank">
-          <img src="img/selectedwork5.gif">
-          <a class="smooth">Shake Shack Custard Cluster</a>
-          <p>A visualization of Shake Shack’s monthly custard calendar, broken out by day & year.</p>
-          <h6>FRONT END CODE & DESIGN FOR MYSELF</h6>
-        </div>
+      #navLogo > img {
+          border-radius: 50%;
+      }
 
-        <div class="grid-item">
-          <a href="https://projects.jonchretien.com/trickipedia/" target="_blank">
-          <img src="img/selectedwork6.jpg">
-          <a class="smooth">The Berrics Trickipedia Stats</a>
-          <p>The stats behind The Berrics’ Trickipedia, an education series on skateboard tricks.</p>
-          <h6>FRONT END CODE & DESIGN FOR MYSELF</h6>
-        </div>
+      #mediaContent {
+        height: 85%;
+      }
 
-        <div class="grid-item">
-          <a href="https://projects.jonchretien.com/hungry-city/" target="_blank">
-          <img src="img/selectedwork7.gif">
-          <a class="smooth">Hungry City Explorer</a>
-          <p>Articles from the NYTimes’ Hungry City series, grouped by borough.</p>
-          <h6>FRONT END CODE, PYTHON, & DESIGN FOR MYSELF</h6>
-        </div>
+      #serviceContent {
+        height: 95%;
+      }
 
-        <div class="grid-item">
-          <a href="https://github.com/jonchretien/infinite-carousel" target="_blank">
-          <img src="img/selectedwork8.gif">
-          <a class="smooth">Infinite Carousel</a>
-          <p>A timed infinite carousel that uses vanilla JavaScript & CSS animations.</p>
-          <h6>FRONT END CODE FOR MYSELF</h6>
-        </div>
+      #header, #subheader {
+          font-family: 'Neon';
+          padding-right: 60%;
+          font-weight: 400;
+          text-align: center;
+          text-transform: uppercase;
+          color: #fff;
+          text-shadow:
+          0 0 5px #000,
+          0 0 10px #000,
+          0 0 20px #000,
+          0 0 40px #fff,
+          0 0 80px #fff;
+      }
 
-        <div class="grid-item">
-          <a href="http://theholgaproject.com/" target="_blank">
-          <img src="img/selectedwork9.jpg">
-          <a class="smooth">The Holga Project</a>
-          <p>Drag & drop an image into your browser and apply a Holga-like filter.</p>
-          <h6>FRONT END CODE & DESIGN FOR MYSELF</h6>
-        </div>
-    </section>
+      #header {
+        padding-top: 25%;
+        font-size: 70px;
+      }
 
-     <!-- second container with photography links -->
+      #subheader {
+        font-size: 30px;
+      }
 
-    <section>
-      <h2>Photography</h2>
-      <div class="grid-container-2">
-        <div class="grid-item2">
-          <a href="https://www.instagram.com/p/1yqGl6IdQ4/" target="_blank">
-          <img src="img/photography1.jpg"></a>
-        </div>
+      .navbar-item {
+          font-family: 'Roboto';
+      }
 
-        <div class="grid-item3">
-          <a href="https://www.instagram.com/p/1yqGl6IdQ4/" target="_blank">
-          <a class="smooth"><img src="img/photography2.jpg"></a>
-        </div>
+      hr {
+        color: black
+      }
 
-        <div class="grid-item4">
-          <a href="https://www.instagram.com/p/xj3JuXIdWb/" target="_blank">
-          <img src="img/photography3.jpg"></a>
-        </div>
+      #navButton {
+        color: #C0C0C0;
+      }
 
-        <div class="grid-item5">
-          <a href="https://www.instagram.com/p/BITHP8PB_M9/" target="_blank">
-          <img src="img/photography4.jpg"></a>
-        </div>
+      .parallax-1 {
+          background-image: url(img/keyboard.jpg);
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+      }
 
-        <div class="grid-item6">
-          <a href="https://www.instagram.com/p/5u__zCIdb9/" target="_blank">
-          <img src="img/photography5.jpg"></a>
+      .parallax-2 {
+          background-image: url(img/skyscraper-hero.jpg);
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+      }
+
+      .parallax-3 {
+          background-image: url(img/waves-hero.jpg);
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+      }
+
+      #carouselHeader {
+        font-size: 27px;
+        text-align: center;
+        padding-top: 5%;
+      }
+
+      #arrows {
+        z-index: -1 !important;
+      }
+
+      #res-header, #res-subheader {
+          display: none;
+        }
+
+      @media only screen and (max-width: 1274px) {
+        p {
+          font-size: 25px;
+        }
+
+        .hero {
+            background-image: url(img/origami-hero.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 100%;
+        }
+
+        .navbar-brand {
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        #navLogo > img {
+            border-radius: 50%;
+        }
+
+        #header, #subheader {
+            display: none;
+        }
+
+        .navbar-item {
+            font-family: 'Roboto';
+        }
+
+        .parallax-1 {
+            background-image: url(img/keyboard.jpg);
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .parallax-2 {
+            background-image: url(img/skyscraper-hero.jpg);
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .parallax-3 {
+            background-image: url(img/waves-hero.jpg);
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #carouselHeader {
+          font-size: 27px;
+        }
+
+        #arrows {
+          z-index: -1 !important;
+        }
+      
+        #res-header, #res-subheader {
+          display: block;
+          position: static;
+          font-family: 'thin';
+          color: white;
+        }
+
+        #res-header {
+          margin-top: 20%;
+          padding-left: 5%;
+        }
+
+        #res-subheader {
+          padding-top: -50%;
+          padding-left: 7%;
+        }
+        #carouselHeader {
+        font-size: 15px;
+        padding-top: 5%;
+        text-align: center;
+        }
+      }
+
+      @media only screen and (max-width: 420px) {
+        .carousel-item {
+          height: 50%;
+        }
+      }
+    
+    </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  
+    <nav class="navbar is-fixed-top is-black" role="navigation" aria-label="main navigation">
+      <div class="container is-fluid">
+          <div class="navbar-brand">
+              <a class="navbar-item" id="navLogo" href="#">
+                <img src="img/logo.png" alt="Logo">
+              </a>
+              <span class="navbar-burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-end">
+                  <span class="navbar-item">
+                    <a class="button is-text" href="#about" id="navButton">
+                      <span>About</span>
+                    </a>
+                  </span>
+                  <span class="navbar-item">
+                    <a class="button is-text" href="#skills" id="navButton">
+                      <span>Skills</span>
+                    </a>
+                  </span>
+                  <span class="navbar-item">
+                    <a class="button is-text" href="#education" id="navButton">
+                      <span>Education</span>
+                    </a>
+                  </span>
+                  <span class="navbar-item">
+                    <a class="button is-text" href="#portfolio" id="navButton">
+                      <span>Portfolio</span>
+                    </a>
+                  </span>
+                  <span class="navbar-item">
+                    <a class="button is-text" href="#contact" id="navButton">
+                      <span>Contact</span>
+                    </a>
+                  </span>
+              </div>
+          </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+
+    <section class="hero is-fullheight">
+      <div class="hero-head">
+        <div class="hero-body">
+          <div class="container is-fluid">
+            <h1 class="title is-1" id="res-header">
+             Jesse Dilgee
+            </h1>
+            <h2 class="subtitle is-4" id="res-subheader"> 
+              Junior Web Developer
+            </h2>
+            <h1 class="title is-1" id="header">
+              Jesse Dilgee
+            </h1>
+            <h2 class="subtitle is-4" id="subheader"> 
+              Junior Web Developer
+            </h2>
+          </div>
         </div>
       </div>
     </section>
 
-      <!-- third container with spotify tabs -->
+  <!-- About -->
 
-    <div class="border-2"></div>
-    <section>
-      <h2>Currently Listening</h2>
-      <div class="grid-container-3">
-        <div class="grid-item7">
-          <a href="https://open.spotify.com/album/2B0fUi0BSwxK2HGNtaFApb" target="_blank">
-          <img src="img/listening1.jpg">
-          <a class="size" href="https://open.spotify.com/album/2B0fUi0BSwxK2HGNtaFApb" target="_blank">Lost & Found</a>
-          <p class="size">Jorja Smith</p>
-        </div>
+  <div id="about"></div>
 
-        <div class="grid-item7">
-          <a href="https://open.spotify.com/album/0SsFgST749MQC6oN9PLHLf" target="_blank">
-          <img src="img/listening2.jpg">
-          <a class="size" href="https://open.spotify.com/album/0SsFgST749MQC6oN9PLHLf" target="_blank">Spotify Singles</a>
-          <p class="size">Khruangbin</p>
-        </div>
+  <br>
 
-        <div class="grid-item7">
-          <a href="https://open.spotify.com/album/28enuddLPEA914scE6Drvk" target="_blank">
-          <img src="img/listening3.jpg">
-          <a class="size" href="https://open.spotify.com/album/28enuddLPEA914scE6Drvk" target="_blank">Geography</a>
-          <p class="size">Tom Misch</p>
-        </div>
+    <section class="section">
 
-        <div class="grid-item7">
-          <a href="https://open.spotify.com/album/6kf46HbnYCZzP6rjvQHYzg" target="_blank">
-          <img src="img/listening4.jpg">
-          <a class="size" href="https://open.spotify.com/album/6kf46HbnYCZzP6rjvQHYzg" target="_blank">American Teen</a>
-          <p class="size">Khalid</p>
-        </div>
+      <!-- Title -->
+
+      <div class="section-heading">
+        <h3 class="title is-2">About Me</h3>
+        <h4 class="subtitle is-5">Jack of all sleights, making magical moments a reality.</h4>
+        <p>A highly motivated and hardworking individual. Passionate about <strong>technology</strong> and <strong>programming</strong>.
+          <br>Striving to gain new knowledge every day.
+        </p>
       </div>
-    </section>
 
-    <!-- footer with nav and copyright -->
+    <br>
 
-    <div class="border-2"></div>
-    <footer>
-       <nav>
-        <ul>
-        <li class="one"><a href="mailto:contact@johnchretien.com">Email</a></li>
-        <li class="one"><a href="https://github.com/jonchretien"  target="_blank">Github</a></li>
-        <li class="one"><a href="https://www.instagram.com/jonchretien/" target="_blank">Instagram</a></li>
-        </ul>
-       </nav>
-       <p class="copyright">© Jon Chretien 2018</p>
-    </footer>
+  <!-- Profile -->
+
+      <div class="columns">
+        <div class="column">
+          <div class="card" id="mediaContent">
+            <div class="card-content">
+              <h3 class="title is-4">Interests:</h3>
+                <div class="content">
+                  <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Video Editing</strong>
+                          <br>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Photography</strong>
+                          <br>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Skateboarding</strong>
+                          <br>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Gaming</strong>
+                          <br>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+            </div>
+            <br>
+          </div>
+        </div>
     </div>
-  </div>
-  </body>
+
+  <!-- Skills -->
+
+    <div class="column">    
+        <div class="card" id="mediaContent">
+          <div class="card-content skills-content">
+            <h3 class="title is-4">Abilities:</h3>
+            <div class="content">
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>HTML5 </strong>
+                      <br>
+                      <progress class="progress is-dark" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>CSS3 </strong>
+                          <br>
+                          <progress class="progress is-dark" value="95" max="100"></progress>
+                        </p>
+                      </div>
+                    </div>
+                </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>PHP </strong>
+                      <br>
+                      <progress class="progress is-dark" value="80" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div id="skills"></div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Skills -->
+ 
+  
+
+  <br>
+
+    <div class="section-heading">
+      <h3 class="title is-2">Skills</h3>
+      <h4 class="subtitle is-5">What can I do for you?</h4>
+      <br>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <div class="box" id="serviceContent">
+          <div class="content">
+            <h4 class="title is-5">Front End Web Development</h4>
+            Prioritizing user experience. Bringing a concept to life with HTML and CSS. Production and maintenance of websites and web application user interfaces.
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box" id="serviceContent">
+          <div class="content">
+            <h4 class="title is-5">Back End Web Development</h4>
+            Building out the "server side" in web applications. AKA everything that happens before hitting your browser using PHP.
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box" id="serviceContent">
+          <div class="content">
+            <h4 class="title is-5">Video Editing</h4>
+            Editing and assembling recorded raw material into a suitable, finished product ready for broadcasting. Includes camera footage, dialogue, sound effects, graphics and special effects.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="parallax-1"></div>
+
+  <!-- Education -->
+
+  <div id="education"></div>
+  <br>
+  <section class="section">
+    <div class="section-heading">
+      <h3 class="title is-2">Education</h3>
+      <h4 class="subtitle is-5">More about my past</h4>
+      <div class='carousel carousel-animated carousel-animate-slide'>
+        <div class='carousel-container'>
+          <div class='carousel-item is-active'>
+            <div class="box" id="carouselCard">
+              <div class="card-content">
+                <p>Secondary:</p>
+                <br>
+                <p>School: South Peninsula High school</p>
+                <p>Year: 2017</p>
+                <p>Qualification: Matric</p>
+                <p>Subjects: English, Afrikaans, Pure Maths, Life Science, Physical Science, Geography</p>
+              </div>
+            </div>  
+          </div>
+          <div class='carousel-item'>
+            <div class="box" id="carouselCard">
+              <div class="card-content">
+                <p>Tertiary:</p>
+                <br>
+                <p>Institution: Life Choices</p>
+                <p>Date: September 2018-February 2019</p>
+                <p>Course: Web Development</p>
+                <p>Subjects: Programming, Professional Development, Design Thinking</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-navigation" id="arrows">
+          <div class="carousel-nav-left">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </div>
+          <div class="carousel-nav-right">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="parallax-2"></div>
+
+  <!-- Portfolio -->
+
+  <div id="portfolio"></div>
+  <br>
+  <section class="section" id="portfolio">
+    <div class="section-heading">
+      <h3 class="title is-2">Portfolio</h3>
+      <h4 class="subtitle is-5">My latest works</h4>
+    </div>
+    <br>
+      <div class=columns>
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                <a href="https://github.com/JesseLee999/php-quiz-project" target="_blank">
+                 <span>Quiz Project</span>
+                </a>
+              </p>
+            </header>
+            <div class="card-content">
+              <figure class="image">
+                <a href="https://github.com/JesseLee999/php-quiz-project" target="_blank">
+                  <img src="img/quiz-scr.png" alt="screenshot">
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                <a href="https://github.com/JesseLee999/jon-chretien" target="_blank">
+                  <span>Jon Chretien Rebuild</span>
+                </a>
+              </p>
+            </header>
+            <div class="card-content">
+              <figure class="image">
+                <a href="https://github.com/JesseLee999/jon-chretien" target="_blank">
+                  <img src="img/jonchretien-scr.png" alt="screenshot">
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+  <section class="section" id="contact">
+    <div class="section-heading">
+      <h3 class="title is-2">Contact</h3>
+      <h4 class="subtitle is-5">Get in touch</h4>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-content">
+        <h3 class="title is-4">Profile</h3>
+          <div class="content">
+            <table class="table-profile">
+              <tr>
+                <th colspan="1"></th>
+                <th colspan="2"></th>
+              </tr>
+              <tr>
+                <td>Phone:</td>
+                <td>084 388 0116</td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td>jdilgee999@gmail.com / jdilgee10@gmail.com</td>
+              </tr>
+            </table>
+          </div>
+          <br>
+          <div class="buttons has-addons is-centered">
+            <div>
+              <a href="https://github.com/JesseLee999" class="button is-light">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/jesse-dilgee-22511b176/" class="button is-light">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/JDilgee" class="button is-light">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Javascript functions -->
+
+  <script>
+      $(document).ready(function(){
+         var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
+      });
+
+      $(document).ready(function() {
+
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function() {
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          $(".navbar-burger").toggleClass("is-active");
+          $(".navbar-menu").toggleClass("is-active");
+
+      });
+
+      window.addEventListener("scroll", function(){
+        $(".navbar-burger").removeClass("is-active");
+        $(".navbar-menu").removeClass("is-active");
+      })
+      });
+  </script>
+</body>
 </html>
