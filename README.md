@@ -13,11 +13,6 @@ Updated online CV with all my details and references.
 |Bulma   |Framework |<a href="https://github.com/jgthms/bulma/releases/download/0.7.2/bulma-0.7.2.zip">Bulma Download</a>|
 ```
 
-### Setting up a virtual host on the wamp server
-
-> <a href="https://www.coderomeos.org/how-to-set-up-virtual-host-on-wamp-server" target="_blank">Click here</a>
-
-
 ## Information needed to create this project
 
 1. Bulma Framework Use
