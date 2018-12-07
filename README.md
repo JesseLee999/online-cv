@@ -42,15 +42,6 @@ Very often when you write code, you want to perform different actions for differ
     addEventListener.. for functionality of the nav burger menu
     
 ```
-3. The PHP foreach Loop
-
-The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.
-
-```
-For every loop iteration, the value of the current array element is assigned to $value and the array 
-pointer is moved by one, until it reaches the last array element.
-
-```
 
 ## Authors
 
