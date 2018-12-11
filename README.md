@@ -9,8 +9,8 @@ Updated online CV with all my details and references.
 ### Software
 
 ```
-|vsCode |Text Editor |<a href="https://code.visualstudio.com/download">VsCode Download</a>|
-|Bulma   |Framework |<a href="https://github.com/jgthms/bulma/releases/download/0.7.2/bulma-0.7.2.zip">Bulma Download</a>|
+|vsCode |Text Editor | <a href="https://code.visualstudio.com/download">VsCode Download</a> |
+|Bulma   |Framework | <a href="https://github.com/jgthms/bulma/releases/download/0.7.2/bulma-0.7.2.zip">Bulma Download</a> |
 ```
 
 ## Information needed to create this project
