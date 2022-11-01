@@ -1,569 +1,665 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jesse Dilgee CV</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@2.2.1/bulma-carousel/dist/css/bulma-carousel.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@2.2.1/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <style>
-      @font-face {
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jesse Dilgee CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma-extensions@2.2.1/bulma-carousel/dist/css/bulma-carousel.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@2.2.1/bulma-carousel/dist/js/bulma-carousel.min.js">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <style>
+    @font-face {
       font-family: 'Neon';
       src: url(fonts/marqueemoon.ttf);
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      src: url(fonts/Roboto-Condensed.ttf);
+    }
+
+    @font-face {
+      font-family: 'Fredoka';
+      src: url(fonts/FredokaOne-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: 'Source Code';
+      src: url(fonts/SourceCodePro-VariableFont_wght.ttf);
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #dfdfdf !important;
+    }
+
+    p {
+
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 30px !important;
+      font-weight: 400;
+    }
+
+    .hero {
+      background-image: url(img/tri-hero.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    nav {
+      padding-top: 2%;
+      padding-right: 1%;
+      padding-left: 1%;
+    }
+
+    .section {
+      background-color: #E8EAE3;
+    }
+
+    .navbar-brand {
+      font-size: 34px;
+      font-weight: bold;
+    }
+
+    #navLogo>img {
+      border-radius: 50%;
+    }
+
+    #mediaContent {
+      height: 100%;
+    }
+
+    #serviceContent {
+      height: 95%;
+    }
+
+    #header,
+    #subheader {
+      font-family: 'Neon';
+      padding-right: 60%;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+      color: #0F0A0A;
+      text-shadow:
+        0 0 5px #000,
+        0 0 10px #000,
+        0 0 20px #000,
+        0 0 40px #FFF,
+        0 0 80px #FFF;
+    }
+
+    #header {
+      padding-top: 15%;
+      font-size: 80px;
+    }
+
+    #subheader {
+      font-size: 35px;
+    }
+
+    .navbar-item {
+      font-family: 'Roboto';
+    }
+
+    hr {
+      color: black
+    }
+
+    #navButton {
+      margin-left: 25px;
+      color: #0F0A0A;
+      font-family: "Source Code", sans-serif;
+      font-size: 15px !important;
+      font-weight: 600;
+      opacity: 0.70;
+    }
+
+    #navButton:hover {
+      color: #0F0A0A;
+      opacity: 1;
+    }
+
+    #portButton {
+      color: #0F0A0A;
+      font-family: "Source Code", sans-serif;
+      font-size: 20px !important;
+      font-weight: 600;
+      opacity: 0.70;
+    }
+
+    #portButton:hover {
+      color: #0F0A0A;
+      opacity: 1;
+    }
+
+    #paratext {
+      color: #0F0A0A !important;
+      font-size: 18px;
+      font-family: "Source Code";
+      letter-spacing: -1px;
+      font-weight: 500 !important;
+    }
+
+    #paratext2 {
+      color: #92817A !important;
+      font-size: 18px;
+      font-family: "Source Code";
+      letter-spacing: -1px;
+      font-weight: 500 !important;
+    }
+
+    #introText {
+      color: #0F0A0A !important;
+      font-size: 26px;
+      font-family: "Fredoka";
+      font-weight: 100 !important;
+    }
+
+    #subtext {
+      color: #0F0A0A !important;
+      font-size: 22px;
+      font-family: "Source Code";
+      letter-spacing: -1px !important;
+      font-weight: 500 !important;
+    }
+
+    #lightTitle {
+      color: #0F0A0A !important;
+      font-family: "Khula";
+      font-weight: 600 !important;
+      font-size: 30px !important;
+      letter-spacing: -1.3px;
+    }
+
+    #lightTitle2 {
+      color: #92817A !important;
+      font-family: "Khula";
+      font-weight: 600 !important;
+      font-size: 30px !important;
+      letter-spacing: -1.3px;
+    }
+
+    .parallax-1 {
+      background-image: url(img/keyboard.jpg);
+      width: 100vw;
+      height: 50vh;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .focus-in-expand {
+      animation: focus-in-expand 0.65s linear both;
+    }
+
+    @keyframes focus-in-expand {
+      0% {
+        letter-spacing: -.5em;
+        filter: blur(12px);
+        opacity: 0
       }
 
-      @font-face {
-          font-family: 'Roboto';
-          src: url(fonts/Roboto-Condensed.ttf);
+      100% {
+        filter: blur(0);
+        opacity: 1
       }
+    }
 
-      @font-face {
-          font-family: 'thin';
-          src: url(fonts/Roboto-Thin.ttf);
-      }
+    .reveal {
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: 1.5s all ease;
+    }
 
-      html {
-          scroll-behavior: smooth;
-      }
+    .reveal.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
 
-      body {
-          font-family: 'Roboto';
-      }
+    #contact {
+      background-color: #0F0A0A;
+    }
 
+    #arrows {
+      z-index: -1 !important;
+    }
+
+    #res-header,
+    #res-subheader {
+      display: none;
+    }
+
+    @media only screen and (max-width: 1274px) {
       p {
-        font-size: 20px;
+        font-size: 25px;
       }
 
       .hero {
-          background-image: url(img/origami-hero.jpg);
-          background-repeat: no-repeat;
-          background-size: cover;
-          overflow: hidden;
+        background-image: url(img/origami-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
       }
 
       .navbar-brand {
-          font-size: 34px;
-          font-weight: bold;
+        font-size: 34px;
+        font-weight: bold;
       }
 
-      #navLogo > img {
-          border-radius: 50%;
+      #navLogo>img {
+        border-radius: 50%;
       }
 
-      #mediaContent {
-        height: 85%;
-      }
-
-      #serviceContent {
-        height: 95%;
-      }
-
-      #header, #subheader {
-          font-family: 'Neon';
-          padding-right: 60%;
-          font-weight: 400;
-          text-align: center;
-          text-transform: uppercase;
-          color: #fff;
-          text-shadow:
-          0 0 5px #000,
-          0 0 10px #000,
-          0 0 20px #000,
-          0 0 40px #fff,
-          0 0 80px #fff;
-      }
-
-      #header {
-        padding-top: 25%;
-        font-size: 70px;
-      }
-
+      #header,
       #subheader {
-        font-size: 30px;
+        display: none;
       }
 
       .navbar-item {
-          font-family: 'Roboto';
-      }
-
-      hr {
-        color: black
-      }
-
-      #navButton {
-        color: #C0C0C0;
+        font-family: 'Roboto';
       }
 
       .parallax-1 {
-          background-image: url(img/keyboard.jpg);
-          width: 100vw;
-          height: 100vh;
-          overflow: hidden;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: fixed;
+        background-image: url(img/keyboard.jpg);
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
       }
 
       .parallax-2 {
-          background-image: url(img/skyscraper-hero.jpg);
-          width: 100vw;
-          height: 100vh;
-          overflow: hidden;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: fixed;
+        background-image: url(img/skyscraper-hero.jpg);
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
       }
 
       .parallax-3 {
-          background-image: url(img/waves-hero.jpg);
-          width: 100vw;
-          height: 100vh;
-          overflow: hidden;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: fixed;
+        background-image: url(img/waves-hero.jpg);
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
       }
 
       #carouselHeader {
         font-size: 27px;
-        text-align: center;
-        padding-top: 5%;
       }
 
       #arrows {
         z-index: -1 !important;
       }
 
-      #res-header, #res-subheader {
-          display: none;
-        }
+      #res-header,
+      #res-subheader {
+        display: block;
+        position: static;
+        font-family: 'thin';
+        color: white;
+      }
 
-      @media only screen and (max-width: 1274px) {
-        p {
-          font-size: 25px;
-        }
+      #res-header {
+        margin-top: 20%;
+        padding-left: 5%;
+      }
 
-        .hero {
-            background-image: url(img/origami-hero.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            max-width: 100%;
-        }
+      #res-subheader {
+        padding-top: -50%;
+        padding-left: 7%;
+      }
 
-        .navbar-brand {
-            font-size: 34px;
-            font-weight: bold;
-        }
-
-        #navLogo > img {
-            border-radius: 50%;
-        }
-
-        #header, #subheader {
-            display: none;
-        }
-
-        .navbar-item {
-            font-family: 'Roboto';
-        }
-
-        .parallax-1 {
-            background-image: url(img/keyboard.jpg);
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        .parallax-2 {
-            background-image: url(img/skyscraper-hero.jpg);
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        .parallax-3 {
-            background-image: url(img/waves-hero.jpg);
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        #carouselHeader {
-          font-size: 27px;
-        }
-
-        #arrows {
-          z-index: -1 !important;
-        }
-      
-        #res-header, #res-subheader {
-          display: block;
-          position: static;
-          font-family: 'thin';
-          color: white;
-        }
-
-        #res-header {
-          margin-top: 20%;
-          padding-left: 5%;
-        }
-
-        #res-subheader {
-          padding-top: -50%;
-          padding-left: 7%;
-        }
-        #carouselHeader {
+      #carouselHeader {
         font-size: 15px;
         padding-top: 5%;
         text-align: center;
-        }
       }
+    }
 
-      @media only screen and (max-width: 420px) {
-        .carousel-item {
-          height: 50%;
-        }
+    @media only screen and (max-width: 420px) {
+      .carousel-item {
+        height: 50%;
       }
-    
-    </style>
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- Navigation bar -->
-  
-    <nav class="navbar is-fixed-top is-black" role="navigation" aria-label="main navigation">
-      <div class="container is-fluid">
+
+
+
+  <!-- Header -->
+
+  <section class="hero is-fullheight">
+    <div class="hero-head">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container is-fluid">
           <div class="navbar-brand">
-              <a class="navbar-item" id="navLogo" href="#">
-                <img src="img/logo.png" alt="Logo">
-              </a>
-              <span class="navbar-burger" data-target="navbarMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
+            <a class="navbar-item" id="navLogo" href="#">
+              <img src="img/logo.png">
+            </a>
+            <span class="navbar-burger" data-target="navbarMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </div>
           <div id="navbarMenu" class="navbar-menu">
-              <div class="navbar-end">
-                  <span class="navbar-item">
-                    <a class="button is-text" href="#about" id="navButton">
-                      <span>About</span>
-                    </a>
-                  </span>
-                  <span class="navbar-item">
-                    <a class="button is-text" href="#skills" id="navButton">
-                      <span>Skills</span>
-                    </a>
-                  </span>
-                  <span class="navbar-item">
-                    <a class="button is-text" href="#education" id="navButton">
-                      <span>Education</span>
-                    </a>
-                  </span>
-                  <span class="navbar-item">
-                    <a class="button is-text" href="#portfolio" id="navButton">
-                      <span>Portfolio</span>
-                    </a>
-                  </span>
-                  <span class="navbar-item">
-                    <a class="button is-text" href="#contact" id="navButton">
-                      <span>Contact</span>
-                    </a>
-                  </span>
-              </div>
-          </div>
-      </div>
-    </nav>
-
-    <!-- Header -->
-
-    <section class="hero is-fullheight">
-      <div class="hero-head">
-        <div class="hero-body">
-          <div class="container is-fluid">
-            <h1 class="title is-1" id="res-header">
-             Jesse Dilgee
-            </h1>
-            <h2 class="subtitle is-4" id="res-subheader"> 
-              Junior Web Developer
-            </h2>
-            <h1 class="title is-1" id="header">
-              Jesse Dilgee
-            </h1>
-            <h2 class="subtitle is-4" id="subheader"> 
-              Junior Web Developer
-            </h2>
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a href="#about" id="navButton">
+                  <span>About</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a href="#skills" id="navButton">
+                  <span>Skills</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a href="#portfolio" id="navButton">
+                  <span>Portfolio</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a href="#contact" id="navButton">
+                  <span>Contact</span>
+                </a>
+              </span>
+            </div>
           </div>
         </div>
+      </nav>
+      <div class="hero-body">
+        <div class="container is-fluid">
+          <h1 class="title is-1" id="res-header">
+            Jesse Dilgee
+          </h1>
+          <h2 class="subtitle is-4" id="res-subheader">
+            Web Developer
+          </h2>
+          <h1 class="title is-1" id="header">
+            Jesse Dilgee
+          </h1>
+          <h2 class="subtitle is-4" id="subheader">
+            Web Developer
+          </h2>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- About -->
 
   <div id="about"></div>
 
-  <br>
 
-    <section class="section">
+  <section class="section">
 
-      <!-- Title -->
+    <!-- Title -->
 
+    <div class="container is-fullhd has-text-centered">
       <div class="section-heading">
-        <h3 class="title is-2">About Me</h3>
-        <h4 class="subtitle is-5">Jack of all sleights, making magical moments a reality.</h4>
-        <p>A highly motivated and hardworking individual. Passionate about <strong>technology</strong> and <strong>programming</strong>.
-          <br>Striving to gain new knowledge every day.
-        </p>
+        <article class="media">
+          <div class="media-content has-text-centered">
+            <div class="content">
+              <h3 class="animate__animated animate__fadeInLeft animate__delay-1s" id="introText">
+                Prioritizing user experience.
+                <br>
+                Bringing a concept to life with HTML and CSS.
+                <br>
+                Production and maintenance of websites and web application user interfaces.
+                <br>
+                <br>
+              </h3>
+            </div>
+          </div>
+        </article>
+        <br>
       </div>
+    </div>
 
     <br>
 
-  <!-- Profile -->
+    <div class="container is-widescreen">
+      <div class="section-heading">
+        <h3 id="lightTitle">About Me</h3>
+        <p id="paratext">
+          A highly motivated and hardworking individual. Striving to gain new knowledge every day.
+          <br>
+          Passionate for all things <strong>technology</strong> and
+          <strong>programming</strong>.
+        </p>
+      </div>
+
+      <br>
+
+      <!-- Profile -->
 
       <div class="columns">
         <div class="column">
-          <div class="card" id="mediaContent">
+          <div id="mediaContent">
             <div class="card-content">
-              <h3 class="title is-4">Interests:</h3>
-                <div class="content">
-                  <article class="media">
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Web Design</strong>
-                          <br>
-                        </p>
-                      </div>
+              <h3 id="lightTitle">Interests:</h3>
+              <div class="content">
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Web Development</strong>
+                        <br>
+                      </p>
                     </div>
-                  </article>
-
-                  <article class="media">
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Photography</strong>
-                          <br>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-
-                  <article class="media">
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Video Editing</strong>
-                          <br>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-
-                  <article class="media">
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Digital Marketing</strong>
-                          <br>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-            </div>
-            <br>
-          </div>
-        </div>
-    </div>
-
-  <!-- Skills -->
-
-    <div class="column">    
-        <div class="card" id="mediaContent">
-          <div class="card-content skills-content">
-            <h3 class="title is-4">Abilities:</h3>
-            <div class="content">
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>HTML5 </strong>
-                      <br>
-                      <progress class="progress is-dark" value="95" max="100"></progress>
-                    </p>
                   </div>
-                </div>
-              </article>
-
-              <article class="media">
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>CSS3 </strong>
-                          <br>
-                          <progress class="progress is-dark" value="95" max="100"></progress>
-                        </p>
-                      </div>
-                    </div>
                 </article>
 
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>PHP </strong>
-                      <br>
-                      <progress class="progress is-dark" value="80" max="100"></progress>
-                    </p>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Photography</strong>
+                        <br>
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Video Editing</strong>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Digital Marketing</strong>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>UI Design</strong>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>UX Design</strong>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <br>
             </div>
           </div>
-          <div id="skills"></div>
+        </div>
+
+        <!-- Skills -->
+
+        <div class="column">
+          <div id="mediaContent">
+            <div class="card-content skills-content">
+              <h3 id="lightTitle">Abilities:</h3>
+              <div class="content">
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>HTML5 </strong>
+                        <br>
+                        <progress class="progress is-dark" value="90" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>CSS3 </strong>
+                        <br>
+                        <progress class="progress is-dark" value="90" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>PHP </strong>
+                        <br>
+                        <progress class="progress is-dark" value="70" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>PHOTOSHOP </strong>
+                        <br>
+                        <progress class="progress is-dark" value="60" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>AFTER EFFECTS </strong>
+                        <br>
+                        <progress class="progress is-dark" value="95" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div id="skills"></div>
+          </div>
         </div>
       </div>
     </div>
 
-  <!-- Skills -->
- 
-  
+    <!-- Skills -->
 
-  <br>
+    <br>
 
-    <div class="section-heading">
-      <h3 class="title is-2">Skills</h3>
-      <h4 class="subtitle is-5">What can I do for you?</h4>
-      <br>
-    </div>
-    <div class="columns">
-      <div class="column">
-        <div class="box" id="serviceContent">
-          <div class="content">
-            <h4 class="title is-5">Front End Web Development</h4>
-            Prioritizing user experience. Bringing a concept to life with HTML and CSS. Production and maintenance of websites and web application user interfaces.
-          </div>
-        </div>
-      </div>
 
-      <div class="column">
-        <div class="box" id="serviceContent">
-          <div class="content">
-            <h4 class="title is-5">Back End Web Development</h4>
-            Building out the "server side" in web applications. AKA everything that happens before hitting your browser using PHP.
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="box" id="serviceContent">
-          <div class="content">
-            <h4 class="title is-5">Video Editing</h4>
-            Editing and assembling recorded raw material into a suitable, finished product ready for broadcasting. Includes camera footage, dialogue, sound effects, graphics and special effects.
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <div class="parallax-1"></div>
 
-  <!-- Education -->
-
-  <div id="education"></div>
-  <br>
-  <section class="section">
-    <div class="section-heading">
-      <h3 class="title is-2">Education</h3>
-      <h4 class="subtitle is-5">More about my past</h4>
-      <div class='carousel carousel-animated carousel-animate-slide'>
-        <div class='carousel-container'>
-          <div class='carousel-item is-active'>
-            <div class="box" id="carouselCard">
-              <div class="card-content">
-                <p>Secondary:</p>
-                <br>
-                <p>School: South Peninsula High school</p>
-                <p>Year: 2017</p>
-                <p>Qualification: Matric</p>
-                <p>Subjects: English, Afrikaans, Pure Maths, Life Science, Physical Science, Geography</p>
-              </div>
-            </div>  
-          </div>
-          <div class='carousel-item'>
-            <div class="box" id="carouselCard">
-              <div class="card-content">
-                <p>Tertiary:</p>
-                <br>
-                <p>Institution: Life Choices</p>
-                <p>Date: September 2018-February 2019</p>
-                <p>Course: Web Development</p>
-                <p>Subjects: Programming, Professional Development, Design Thinking</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-navigation" id="arrows">
-          <div class="carousel-nav-left">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-          </div>
-          <div class="carousel-nav-right">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="parallax-2"></div>
-
   <!-- Portfolio -->
 
   <div id="portfolio"></div>
-  <br>
+
   <section class="section" id="portfolio">
-    <div class="section-heading">
-      <h3 class="title is-2">Portfolio</h3>
-      <h4 class="subtitle is-5">My latest works</h4>
-    </div>
-    <br>
+    <div class="container is-fullhd">
+      <div class="section-heading">
+        <h3 id="lightTitle">Portfolio</h3>
+        <h4 id="paratext">My latest works</h4>
+      </div>
+      <br>
       <div class=columns>
-        <div class="column">
-          <div class="card">
-            <header class="card-header">
+        <div class="column reveal">
+          <div>
+            <header>
               <p class="card-header-title">
-                <a href="https://github.com/JesseLee999/php-quiz-project" target="_blank">
-                 <span>Quiz Project</span>
+                <a href="https://JesseLee999.github.io/skullbox-studio-design/" target="_blank" id="portButton">
+                  <span>Skullbox Tattoo Studio</span>
                 </a>
               </p>
             </header>
             <div class="card-content">
               <figure class="image">
-                <a href="https://github.com/JesseLee999/php-quiz-project" target="_blank">
-                  <img src="img/quiz-scr.png" alt="screenshot">
+                <a href="https://JesseLee999.github.io/skullbox-studio-design/" target="_blank">
+                  <img src="img/skullbox-scr.png" alt="screenshot">
                 </a>
               </figure>
             </div>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <header class="card-header">
+        <div class="column reveal">
+          <div>
+            <header>
               <p class="card-header-title">
-                <a href="https://github.com/JesseLee999/jon-chretien" target="_blank">
+                <a href="https://github.com/JesseLee999/jon-chretien" target="_blank" id="portButton">
                   <span>Jon Chretien Rebuild</span>
                 </a>
               </p>
@@ -579,32 +675,29 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- Contact -->
 
   <section class="section" id="contact">
-    <div class="section-heading">
-      <h3 class="title is-2">Contact</h3>
-      <h4 class="subtitle is-5">Get in touch</h4>
-    </div>
-    <br>
-    <div class="card">
-      <div class="card-content">
-        <h3 class="title is-4">Profile</h3>
+    <div class="container is-widescreen">
+      <div class="section-heading">
+        <h3 id="lightTitle2">Contact</h3>
+        <h4 id="paratext2">Get in touch</h4>
+      </div>
+      <br>
+      <div>
+        <div class="card-content">
           <div class="content">
             <table class="table-profile">
               <tr>
-                <th colspan="1"></th>
-                <th colspan="2"></th>
+                <td id="paratext2">Phone:</td>
+                <td id="paratext2">084 388 0116</td>
               </tr>
               <tr>
-                <td>Phone:</td>
-                <td>084 388 0116</td>
-              </tr>
-              <tr>
-                <td>Email:</td>
-                <td>jdilgee999@gmail.com / jdilgee10@gmail.com</td>
+                <td id="paratext2">Email:</td>
+                <td id="paratext2">jdilgee999@gmail.com</td>
               </tr>
             </table>
           </div>
@@ -621,6 +714,7 @@
               </a>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </section>
@@ -628,26 +722,23 @@
   <!-- Javascript functions -->
 
   <script>
-      $(document).ready(function(){
-         var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
-      });
 
-      $(document).ready(function() {
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
 
-      // Check for click events on the navbar burger icon
-      $(".navbar-burger").click(function() {
-
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          $(".navbar-burger").toggleClass("is-active");
-          $(".navbar-menu").toggleClass("is-active");
-
-      });
-
-      window.addEventListener("scroll", function(){
-        $(".navbar-burger").removeClass("is-active");
-        $(".navbar-menu").removeClass("is-active");
-      })
-      });
+    window.addEventListener("scroll", reveal);
   </script>
 </body>
+
 </html>
