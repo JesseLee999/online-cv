@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jesse Dilgee CV</title>
@@ -17,7 +18,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
   <style>
+
+    /* Font FACES */
+    
     @font-face {
       font-family: 'Neon';
       src: url(fonts/marqueemoon.ttf);
@@ -38,7 +43,6 @@
       src: url(fonts/SourceCodePro-VariableFont_wght.ttf);
     }
 
-
     html {
       scroll-behavior: smooth;
     }
@@ -58,7 +62,7 @@
     }
 
     .hero {
-      background-image: url(img/tri-hero.jpg);
+      background-image: linear-gradient(to right top, #840cd4, #840cd4, #840cd4, #840cd4, #840cd4, #8931d9, #8e47dd, #945ae0, #a37fe5, #b5a1e7, #cac2e6, #e2e2e2);
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
@@ -71,7 +75,7 @@
     }
 
     .section {
-      background-color: #E8EAE3;
+      background-color: #e2e2e2;
     }
 
     .navbar-brand {
@@ -98,7 +102,7 @@
       font-weight: 400;
       text-align: center;
       text-transform: uppercase;
-      color: #0F0A0A;
+      color: #e2e2e2;
       text-shadow:
         0 0 5px #000,
         0 0 10px #000,
@@ -109,11 +113,11 @@
 
     #header {
       padding-top: 15%;
-      font-size: 80px;
+      font-size: 90px;
     }
 
     #subheader {
-      font-size: 35px;
+      font-size: 45px;
     }
 
     .navbar-item {
@@ -128,7 +132,7 @@
       margin-left: 25px;
       color: #0F0A0A;
       font-family: "Source Code", sans-serif;
-      font-size: 15px !important;
+      font-size: 16px !important;
       font-weight: 600;
       opacity: 0.70;
     }
@@ -198,8 +202,35 @@
       letter-spacing: -1.3px;
     }
 
+    #zoomhover:hover {
+      transform: scale(1.1);
+      filter: blur(2px);
+    }
+
+
+    .custom-shape-divider-bottom-1667382686 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1667382686 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 136px;
+    }
+
+    .custom-shape-divider-bottom-1667382686 .shape-fill {
+      fill: #e2e2e2;
+    }
+
     .parallax-1 {
-      background-image: url(img/keyboard.jpg);
+      background-image: linear-gradient(to top, #e2e2e2, #d1cfd2, #c2bcc0, #b5a9ac, #a79797, #a79797, #a79797, #a79797, #b5a9ac, #c2bcc0, #d1cfd2, #e2e2e2);
       width: 100vw;
       height: 50vh;
       overflow: hidden;
@@ -208,26 +239,182 @@
       background-attachment: fixed;
     }
 
-    .focus-in-expand {
-      animation: focus-in-expand 0.65s linear both;
+    @keyframes blink {
+
+      0%,
+      22%,
+      36%,
+      75% {
+        color: #945ae0 ;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #945ae0,
+          -0.2rem 0.1rem 1rem #945ae0, 0.2rem 0.1rem 1rem #945ae0,
+          0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+      }
+
+      28%,
+      33% {
+        color: #945ae0;
+        text-shadow: none;
+      }
+
+      82%,
+      97% {
+        color: #0F0A0A;
+        text-shadow: none;
+      }
     }
 
-    @keyframes focus-in-expand {
+    .flicker {
+      animation: shine 2s forwards, blink 3s 2s infinite;
+    }
+
+    .fast-flicker {
+      animation: shine 2s forwards, blink 10s 1s infinite;
+    }
+
+    @keyframes shine {
       0% {
-        letter-spacing: -.5em;
-        filter: blur(12px);
-        opacity: 0
+        color: #0F0A0A;
+        text-shadow: none;
       }
 
       100% {
-        filter: blur(0);
-        opacity: 1
+        color: #0F0A0A;
+        text-shadow: 0 0 0.6rem #0F0A0A, 0 0 1.5rem #ff65bd,
+          -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+          0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+      }
+    }
+
+    @keyframes flicker {
+      from {
+        opacity: 1;
+      }
+
+      4% {
+        opacity: 0.9;
+      }
+
+      6% {
+        opacity: 0.85;
+      }
+
+      8% {
+        opacity: 0.95;
+      }
+
+      10% {
+        opacity: 0.9;
+      }
+
+      11% {
+        opacity: 0.922;
+      }
+
+      12% {
+        opacity: 0.9;
+      }
+
+      14% {
+        opacity: 0.95;
+      }
+
+      16% {
+        opacity: 0.98;
+      }
+
+      17% {
+        opacity: 0.9;
+      }
+
+      19% {
+        opacity: 0.93;
+      }
+
+      20% {
+        opacity: 0.99;
+      }
+
+      24% {
+        opacity: 1;
+      }
+
+      26% {
+        opacity: 0.94;
+      }
+
+      28% {
+        opacity: 0.98;
+      }
+
+      37% {
+        opacity: 0.93;
+      }
+
+      38% {
+        opacity: 0.5;
+      }
+
+      39% {
+        opacity: 0.96;
+      }
+
+      42% {
+        opacity: 1;
+      }
+
+      44% {
+        opacity: 0.97;
+      }
+
+      46% {
+        opacity: 0.94;
+      }
+
+      56% {
+        opacity: 0.9;
+      }
+
+      58% {
+        opacity: 0.9;
+      }
+
+      60% {
+        opacity: 0.99;
+      }
+
+      68% {
+        opacity: 1;
+      }
+
+      70% {
+        opacity: 0.9;
+      }
+
+      72% {
+        opacity: 0.95;
+      }
+
+      93% {
+        opacity: 0.93;
+      }
+
+      95% {
+        opacity: 0.95;
+      }
+
+      97% {
+        opacity: 0.93;
+      }
+
+      to {
+        opacity: 1;
       }
     }
 
     .reveal {
       position: relative;
-      transform: translateY(150px);
+      transform: translateX(-150px);
       opacity: 0;
       transition: 1.5s all ease;
     }
@@ -239,10 +426,6 @@
 
     #contact {
       background-color: #0F0A0A;
-    }
-
-    #arrows {
-      z-index: -1 !important;
     }
 
     #res-header,
@@ -280,44 +463,6 @@
         font-family: 'Roboto';
       }
 
-      .parallax-1 {
-        background-image: url(img/keyboard.jpg);
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-      }
-
-      .parallax-2 {
-        background-image: url(img/skyscraper-hero.jpg);
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-      }
-
-      .parallax-3 {
-        background-image: url(img/waves-hero.jpg);
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-      }
-
-      #carouselHeader {
-        font-size: 27px;
-      }
-
-      #arrows {
-        z-index: -1 !important;
-      }
-
       #res-header,
       #res-subheader {
         display: block;
@@ -353,14 +498,13 @@
 
 <body>
 
-  <!-- Navigation bar -->
-
-
-
   <!-- Header -->
 
   <section class="hero is-fullheight">
     <div class="hero-head">
+
+      <!-- Navigation bar -->
+
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="container is-fluid">
           <div class="navbar-brand">
@@ -378,11 +522,6 @@
               <span class="navbar-item">
                 <a href="#about" id="navButton">
                   <span>About</span>
-                </a>
-              </span>
-              <span class="navbar-item">
-                <a href="#skills" id="navButton">
-                  <span>Skills</span>
                 </a>
               </span>
               <span class="navbar-item">
@@ -408,10 +547,10 @@
             Web Developer
           </h2>
           <h1 class="title is-1" id="header">
-            Jesse Dilgee
+            J<span class="fast-flicker">e</span></e>sse Di<span class="flicker">l</span>gee
           </h1>
           <h2 class="subtitle is-4" id="subheader">
-            Web Developer
+            Freelance Designer
           </h2>
         </div>
       </div>
@@ -425,19 +564,33 @@
 
   <section class="section">
 
-    <!-- Title -->
+    <div class="custom-shape-divider-bottom-1667382686">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <!-- About -->
 
     <div class="container is-fullhd has-text-centered">
       <div class="section-heading">
-        <article class="media">
+        <article class="media reveal">
           <div class="media-content has-text-centered">
             <div class="content">
-              <h3 class="animate__animated animate__fadeInLeft animate__delay-1s" id="introText">
-                Prioritizing user experience.
+              <h3 id="introText">
+                Hi, my name is Jesse.
                 <br>
-                Bringing a concept to life with HTML and CSS.
+                I am a full stack web develepor with a strong front-end focus.
                 <br>
-                Production and maintenance of websites and web application user interfaces.
+                I currently live and work in South Africa, hit me up if you are in the region.
                 <br>
                 <br>
               </h3>
@@ -616,10 +769,7 @@
       </div>
     </div>
 
-    <!-- Skills -->
-
     <br>
-
 
   </section>
 
@@ -637,7 +787,7 @@
       </div>
       <br>
       <div class=columns>
-        <div class="column reveal">
+        <div class="column">
           <div>
             <header>
               <p class="card-header-title">
@@ -647,7 +797,7 @@
               </p>
             </header>
             <div class="card-content">
-              <figure class="image">
+              <figure class="image" id="zoomhover">
                 <a href="https://JesseLee999.github.io/skullbox-studio-design/" target="_blank">
                   <img src="img/skullbox-scr.png" alt="screenshot">
                 </a>
@@ -655,18 +805,18 @@
             </div>
           </div>
         </div>
-        <div class="column reveal">
+        <div class="column">
           <div>
             <header>
               <p class="card-header-title">
-                <a href="https://github.com/JesseLee999/jon-chretien" target="_blank" id="portButton">
+                <a href="https://jesselee999.github.io/jon-chretien/" target="_blank" id="portButton">
                   <span>Jon Chretien Rebuild</span>
                 </a>
               </p>
             </header>
             <div class="card-content">
-              <figure class="image">
-                <a href="https://github.com/JesseLee999/jon-chretien" target="_blank">
+              <figure class="image" id="zoomhover">
+                <a href="https://jesselee999.github.io/jon-chretien/" target="_blank">
                   <img src="img/jonchretien-scr.png" alt="screenshot">
                 </a>
               </figure>
@@ -722,7 +872,6 @@
   <!-- Javascript functions -->
 
   <script>
-
     function reveal() {
       var reveals = document.querySelectorAll(".reveal");
       for (var i = 0; i < reveals.length; i++) {
